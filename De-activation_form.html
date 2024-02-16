@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deactivation form</title>
+    <style>
+        fieldset{
+            position: relative;
+            left:550px;
+            width:500px;
+            height:900px;
+            background-color:black;
+            color: white;
+            font-size: 20px;
+            border-radius: 8px;
+        }
+        #Info{
+            margin-left: 20px;
+        }
+        <!-- .box{
+            margin-bottom: 10px;
+        } -->
+        #deactivate{
+            position: relative;
+            left: 130px;
+            width:200px;
+            height: 50px;
+            top:20px;
+            border: 2px solid rgb(60, 175, 237);
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <fieldset>
+        <form action="#">
+            <h1 align="center">Deactivation Form</h1>
+            <div id="info">
+                <div>
+                    <p>Full name</p>
+                    <input type="text" placeholder="Enter your name" class="box">
+                </div>
+
+                <div>
+                    <p>Username</p>
+                    <input type="text" placeholder="Enter Your Username" class="box">
+                </div>
+
+                <div>
+                    <p>Address</p>
+                    <input type="text" placeholder="Enter your address" class="box">
+                </div>
+
+                <div>
+                    <input type="text" placeholder="City">
+                    <input type="number" placeholder="Pin Code">
+                    <select name="country" id="">
+                        <option value="Select a country">Select a country</option>
+                        <option value="India">India</option>
+                        <option value="US">US</option>
+                        <option value="London">London</option>
+                    </select>
+                </div>
+
+                <div>
+                    <p>Email</p>
+                    <input type="email" placeholder="Enter your email">
+                </div>
+
+                <div>
+                    <p>Date</p>
+                    <input type="Date">
+                </div>
+
+                <div>
+                    <p>Reason</p>
+                    <textarea name="reason" id="" cols="30" rows="10" placeholder="Reason for the deactivation of your account"></textarea>
+                </div>
+
+                <button id="deactivate" onclick="alert('Deactivated Succesfully')">Deactivate</button>
+            </div>
+        </form>
+    </fieldset>
+</body>
+</html>
